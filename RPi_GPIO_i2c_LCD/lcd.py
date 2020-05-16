@@ -21,6 +21,13 @@ class HD44780:
         except KeyError:
             return False
 
+    def clear(self):
+           for line in buffer:
+               buffer[line] = str("                                       ")
+
+    def backlight(self,state):
+        self.lcd.backlight(state)
+
     def updateDisplay(self, stop_event):
         global buffer
         while not stop_event.is_set():
