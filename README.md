@@ -28,16 +28,20 @@ pip3 install RPi-GPIO-I2C-LCD
 ```
 
 ### Usage
-** set(string,line) **  
+__set(string,line)__
+
 Sets string to given line
 
-** get(line) **
+__get(line)__
+
 Returns string of given line from buffer
 
-** backlight(on|off) ** 
+__backlight(on|off)__ 
+
 Turns backlight on or off (default is on)
 
-** clear() **
+__clear()__
+
 Clears display buffers
   
 ### Examples
